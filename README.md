@@ -27,8 +27,15 @@ El objetivo de nuestro usuario es usar nuestro sistema de pago con frecuencia pa
 Nuestro producto le ofrece al usuario un sistema de pago rápido y seguro, que mediante su uso continuo le permite la posibilidad de cubrir su pasión por viajar.
 
 <figure>
-<img width="300px" src="./docs/img/prototype1.jpg">
+<img width="500px" src="./docs/img/prototype1.jpg">
 <figcaption>Primer Prototipo</figcaption>
+</figure>
+
+Con el feedback recibido mejoramos la distribución de los componentes.
+
+<figure>
+<img width="500px" src="./docs/img/card-validation-page.jpg">
+<figcaption>Prototipo</figcaption>
 </figure>
  
 ## 3. Objetivos de aprendizaje
