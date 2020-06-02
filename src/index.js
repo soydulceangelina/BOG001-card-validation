@@ -11,5 +11,5 @@ formValidator.addEventListener('submit', getNumber);
 function getNumber(event){
     event.preventDefault();
     const tdcNumber = userCreditCard.value; // value
-    validator.isValid(tdcNumber);
+    console.log(validator.isValid(tdcNumber));
 }

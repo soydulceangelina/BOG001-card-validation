@@ -20,10 +20,19 @@ const validator = {
     }
     numsGroup.forEach(function(digit) {
       sum += digit
-    });
+    })
 
     console.log(sum);
+
+    if(sum % 10 === 0){
+      return true;
+    }else {
+      return false;
+    }
+
   }
+
+
 };
 
 export default validator;
