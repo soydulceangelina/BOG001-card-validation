@@ -30,9 +30,26 @@ const validator = {
       return false;
     }
 
-  }
+  },
 
-
+  maskify: function(num2) {
+    let numsGroup2 = num2.split("").reverse();
+    let maskReversed = "";
+   
+    for (let i = 0; i < numsGroup2.length; i++) {
+      if (i < 4) {
+        maskReversed = maskReversed + numsGroup2[i];
+      } else {
+        maskReversed = maskReversed + "#";
+      }
+    }
+    let mask = "";
+    for (let i = maskReversed.length - 1; i >= 0; i--) {
+      mask = mask + maskReversed[i];
+    }
+    console.log(typeof mask)
+    return mask;
+  },
 };
 
 export default validator;
