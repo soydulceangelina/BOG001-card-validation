@@ -7,14 +7,15 @@
   </head>
   <body>
     <header></header>
-    <main>
+    <main class="form">
       <section class="form-container">
         <h2>Credit Card</h2>
-        <form class="validator-form-container">
-          <input id="Username" class="input" type="text" placeholder="Username"/>
-          <input id="numbertdc" class="input" type="number" placeholder="Número de TDC"/>
-          <button class="button">Validar</button>
+        <form class="validator-form-container" id='form'>
+          <input id="userName" class="input" type="text" placeholder="Username"/>
+          <input id="numberTdc" class="input" type="number" placeholder="Número de TDC"/>
+          <input id="buttonForm" value="Validar" class="button" required="required" type="submit"/>
         </form>
+        <div id="result"></div>
       </section>
     </main>
     <footer></footer>
