@@ -1,7 +1,7 @@
 import validator from './validator.js';
 
-const formValidator = document.getElementById('form'); // form
-const userCreditCard = document.getElementById('numberTdc'); // input
+const formValidator = document.getElementById('form'); 
+const userCreditCard = document.getElementById('numberTdc'); 
 const invalidCreditCard = document.getElementById('invalidCard');
 const validCreditCard = document.getElementById('validCard');
 const validCardReport = document.getElementById('validCardMessage');
