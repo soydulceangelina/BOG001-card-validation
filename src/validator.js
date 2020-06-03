@@ -22,8 +22,6 @@ const validator = {
       sum += digit
     })
 
-    console.log(sum);
-
     if(sum % 10 === 0){
       return true;
     }else {
@@ -47,7 +45,6 @@ const validator = {
     for (let i = maskReversed.length - 1; i >= 0; i--) {
       mask = mask + maskReversed[i];
     }
-    console.log(typeof mask)
     return mask;
   },
 };
