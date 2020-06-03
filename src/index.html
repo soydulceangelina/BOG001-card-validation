@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <img src="assets/logo1.png" alt="Logo DupaPay">
+    </header>
     <main>
       <section class="form">
         <div class="form-container">
           <form class="validator-form-container" id='form'>
             <h2>Dupa Card</h2>
-            <input id="userName" class="input" type="text" placeholder="Username"/>
-            <input id="numberTdc" class="input" type="text" placeholder="Número de TDC"/>
+            <input id="userName" class="input" required="required" type="text" placeholder="Username"/>
+            <input id="numberTdc" class="input" required="required" type="text" placeholder="Número de TDC"/>
             <input id="buttonForm" value="Validar" class="button" required="required" type="submit"/>
           </form>
           <h1 id='invalidCard'></h1>
@@ -22,7 +24,7 @@
       <section id="validCard">
         <div class="valid-container">
           <div class="valid-img-container">
-            <img src="" alt="Valid Card">
+            <img src="assets/check.png" alt="Valid Card">
           </div>
           <h1 id="validCardMessage"></h1>
         </div>

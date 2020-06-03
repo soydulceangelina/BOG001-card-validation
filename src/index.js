@@ -26,3 +26,13 @@ function getNumber(event){
         setTimeout(function(){ location.reload(); }, 1000);
     }
 }
+
+document.getElementById("numberTdc").addEventListener("input", onlyNumber);
+
+function onlyNumber() {
+  let numberTdc = document.getElementById("numberTdc");
+  const regEx = new RegExp(/^\d+$/);
+  if (!regEx.test(numberTdc.value)) {
+    numberTdc.value = numberTdc.value.substring(0, numberTdc.value.length - 1);
+  }
+}
