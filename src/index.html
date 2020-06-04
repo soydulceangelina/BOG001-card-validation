@@ -16,9 +16,9 @@
         <div class="form-container">
           <form class="validator-form-container" id="form">
             <h1>Dupa Card</h1>
-            <input id="userName" class="input" required="required" type="text" placeholder="Username"/>
-            <input id="numberTdc" class="input" required="required" type="text" placeholder="Número de TDC"/>
-            <input id="buttonForm" value="Validar" class="button" required="required" type="submit"/>
+            <input id="userName" class="input" required="required" type="email" placeholder="Correo electrónico afiliado"/>
+            <input id="numberTdc" class="input" required="required" type="text" minlength="10" maxlength="18" placeholder="N° Tarjeta de crédito"/>
+            <input id="buttonForm" value="Pagar" class="button" required="required" type="submit"/>
           </form>
           <h3 id="invalidCard"></h3>
         </div>
@@ -32,7 +32,19 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="barra-inferior">
+        <div class="barra-inferior">
+          <a href="#">Contacto</a>
+          <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="icono-social">
+          <img src="assets/facebook.png" alt="icono facebook" />
+          <img src="assets/instagram.png" alt="icono instagram" />
+          <img src="assets/twitter.png" alt="icono twitter" />
+        </div>
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
