@@ -12,11 +12,10 @@
 }
 
 body{
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    /* position: fixed; */
 }
 
 header{
@@ -64,35 +63,41 @@ main{
 }
 
 .button:hover{
-    background-color: var(--input-color);
+    background-color: var(--background-color);
     cursor: pointer;
 }
 
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-  }
-  
-  .barra-inferior {
+}
+
+.barra-inferior {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .barra-inferior a {
+    align-items: center;
+}
+
+.contact{
+    margin-left: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-inferior a {
     text-decoration: none;
-    color: var(--font-color);
-    margin: 30px;
     font-size: var (var(--font-size1));
-    padding: 16px 16px;
+    color: var(--form-color);
     bottom: 0;
-  }
-  
-  .icono-social img {
+}
+
+.icono-social img {
     margin: 30px;
     width: 30px;
     height: 30px;
-  }
+}
