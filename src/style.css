@@ -77,7 +77,7 @@ footer {
     justify-content: space-between;
 }
 
-.barra-inferior {
+.bottom-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,15 +90,15 @@ footer {
     justify-content: space-between;
 }
 
-.barra-inferior a {
+.bottom-bar a {
     text-decoration: none;
     font-size: var (var(--font-size1));
     color: var(--form-color);
     bottom: 0;
 }
 
-.icono-social img {
-    margin: 30px;
+.socialmedia-icons img {
+    margin: 20px;
     width: 30px;
     height: 30px;
 }
