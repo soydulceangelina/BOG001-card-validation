@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>DupaPay</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/faviconDupaPay.ico" />
   </head>
   <body>
     <header>
@@ -12,9 +13,19 @@
       </div>
     </header>
     <main>
-      <section class="form">
+      <section id="firstView" class="first-page">
+        <div class="user-login">
+          <img src="assets/imagen2.png" alt="Afiliado" />
+          <input type="button" class="buttonSelect" value="Afiliado a DupaPay" id="affiliatebutton"/>
+        </div>
+        <div class="user-login">
+          <img src="assets/image1.png" alt="Afiliar" />
+          <input type="button" class="buttonSelect" value="Afiliar tarjeta de credito" />
+        </div>
+      </section>
+      <section class="form"  id="form">
         <div class="form-container">
-          <form class="validator-form-container" id="form">
+          <form class="validator-form-container">
             <h1>Dupa Card</h1>
             <input id="userMail" class="input" required="required" type="email" placeholder="Correo electrónico afiliado"/>
             <input id="numberTdc" class="input" autocomplete="off" required="required" type="text" minlength="10" maxlength="18" placeholder="N° Tarjeta de crédito"/>

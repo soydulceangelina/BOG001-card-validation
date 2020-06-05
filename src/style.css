@@ -31,7 +31,47 @@ header{
 }
 
 main{
+    width: 100%;
     position: fixed;
+}
+
+.first-page{
+    margin: 0 250px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-login{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-login img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.buttonSelect{
+    background-color: var(--button-color);
+    width: 400px;
+    height: 50px;
+    border: 0;
+    font-size: var(--font-size3);
+    font-weight: bold;
+    color: var(--font-color);
+    border-radius: 50px;
+    outline: none;
+}
+
+.buttonSelect:hover{
+    box-shadow: 0 0 5px 0 var(--form-color);
+    background-color: var(--background-color);
+    cursor: pointer;
 }
 
 .input{
@@ -90,15 +130,29 @@ footer {
     justify-content: space-between;
 }
 
-.bottom-bar a {
+.contact a {
     text-decoration: none;
     font-size: var (var(--font-size1));
     color: var(--form-color);
     bottom: 0;
 }
 
+.contact a:hover {
+    color: var(--button-color);
+}
+
 .socialmedia-icons img {
     margin: 20px;
     width: 30px;
     height: 30px;
+}
+
+.socialmedia-icons img:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        background-color: red;
+    }
 }
