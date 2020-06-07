@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class="logo-container">
+      <div id="homeBack" class="logo-container">
         <img src="assets/logo.png" alt="Logo DupaPay">
       </div>
     </header>
@@ -20,17 +20,24 @@
         </div>
         <div class="user-login">
           <img src="assets/image1.png" alt="Afiliar" />
-          <input type="button" class="buttonSelect" value="Afiliar tarjeta de credito" />
+          <input type="button" class="buttonSelect" value="Afiliar tarjeta de credito" id="signUpButton" />
         </div>
       </section>
-      <section class="form"  id="form">
+      <section class="notfound-view" id="notFoundView">
+        <div class="notfound-view-container">
+          <img  src="assets/error404.png" alt="Error404"/>
+          <h3>Página no encontrada</h1>
+        </div>
+        <!-- <input id="returnButton" type="button" value="Volver" class="button" /> -->
+      </section>
+      <section class="form" id="form">
         <div class="form-container">
-          <form class="validator-form-container">
+          <form class="validator-form-container" autocomplete="off">
             <h1>Dupa Card</h1>
             <div class="inputs-container">
-            <input id="userMail" class="input" required="required" type="email" placeholder="Correo electrónico afiliado"/>
-            <input id="numberTdc" class="input" autocomplete="off" required="required" type="text" minlength="10" maxlength="18" placeholder="N° Tarjeta de crédito"/>
-            <input id="buttonForm" value="Pagar" class="button" required="required" type="submit"/>
+              <input id="userMail" class="input" required="required" type="email" placeholder="Correo electrónico afiliado"/>
+              <input id="numberTdc" class="input"  required="required" type="text" minlength="10" maxlength="18" placeholder="N° Tarjeta de crédito"/>
+              <input id="buttonForm" value="Pagar" class="button" required="required" type="submit"/>
             </div>
           </form>
           <h3 id="invalidCard"></h3>
@@ -46,8 +53,8 @@
       </section>
     </main>
     <footer>
-      <div class="bottom-bar">
-        <div class="contact">
+      <div class="lower-bar">
+        <div>
           <a href="#">Contacto</a>
           <a href="#">Preguntas frecuentes</a>
         </div>
