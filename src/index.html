@@ -9,56 +9,75 @@
   <body>
     <header>
       <div id="homeBack" class="logo-container">
-        <img src="assets/logo.png" alt="Logo DupaPay">
+        <img src="assets/logo.png" alt="Logo DupaPay" />
       </div>
     </header>
     <main>
       <section id="firstView" class="first-page">
-        <div class="user-login">
-          <img src="assets/imagen2.png" alt="Afiliado" />
-          <input type="button" class="buttonSelect" value="Afiliado a DupaPay" id="affiliatebutton"/>
+        <div class="option-container">
+          <div class="user-selection-container">
+            <img src="assets/imagen2.png" alt="Afiliado" />
+            <input
+              type="button"
+              class="buttonSelect"
+              value="Ingresar como afiliado"
+              id="affiliateButton"
+            />
+          </div>
+          <div class="user-selection-container">
+            <img src="assets/image1.png" alt="Afiliar" />
+            <input
+              id="signUpButton"
+              type="button"
+              class="buttonSelect"
+              value="Afiliar tarjeta de credito"
+            />
+          </div>
         </div>
-        <div class="user-login">
-          <img src="assets/image1.png" alt="Afiliar" />
-          <input type="button" class="buttonSelect" value="Afiliar tarjeta de credito" id="signUpButton" />
-        </div>
+        <!-- <div class="information-box"> -->
+          <h1>Recuerda que pagando con DupaPay acumulas puntos que puedes canjear por tiquetes aéreos</h1>
+        <!-- </div> -->
       </section>
-      <section class="notfound-view" id="notFoundView">
-        <div class="notfound-view-container">
-          <img  src="assets/error404.png" alt="Error404"/>
-          <h3>Página no encontrada</h3>
+      <section class="homeButton" id="notFoundView">
+        <div class="not-found-page">
+          <img
+            src="assets/error404.png"
+            alt="Error404"
+          />
+          <h1>Página no encontrada</h1>
         </div>
-        <!-- <input id="returnButton" type="button" value="Volver" class="button" /> -->
+        <input id="returnButton" type="button" value="Volver" class="button" />
       </section>
       <section class="form" id="form">
         <div class="form-container">
           <form class="validator-form-container" autocomplete="off">
-            <h1>Dupa Card</h1>
+            <h3>Dupa Card</h3>
             <div class="inputs-container">
               <input id="userMail" class="input" required="required" type="email" placeholder="Correo electrónico afiliado"/>
               <input id="numberTdc" class="input"  required="required" type="text" minlength="10" maxlength="18" placeholder="N° Tarjeta de crédito"/>
               <input id="buttonForm" value="Pagar" class="button" required="required" type="submit"/>
             </div>
           </form>
-          <h3 id="invalidCard"></h3>
+          <h1 id="invalidCard"></h1>
         </div>
       </section>
       <section id="validCard">
         <div class="valid-container">
           <div class="valid-img-container">
-            <img src="assets/check.png" alt="Valid Card">
+            <img class="checkImage" src="assets/check.png" alt="Valid Card" />
           </div>
-          <h3 id="validCardMessage"></h3>
+          <h1 id="validCardMessage"></h1>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="lower-bar">
         <div>
           <a href="#">Contacto</a>
           <a href="#">Preguntas frecuentes</a>
         </div>
-        <div class="socialmedia-icons">
+        <div class="social-icons-container">
           <img src="assets/facebook.png" alt="icono facebook" />
           <img src="assets/instagram.png" alt="icono instagram" />
           <img src="assets/twitter.png" alt="icono twitter" />

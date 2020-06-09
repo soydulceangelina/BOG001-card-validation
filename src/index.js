@@ -1,69 +1,69 @@
-import validator from './validator.js';
+import validator from "./validator.js";
 
-// const selectionView = document.getElementById('firstView'); //vista inicial (dos opciones) 
-const notFoundPage = document.getElementById("notFoundView"); //vista 404
-const formValidator = document.getElementById('form'); //vista formulario
-const validCreditCard = document.getElementById('validCard'); //vista check, tarjeta valida
-const userCreditCard = document.getElementById('numberTdc'); 
-const invalidCreditCard = document.getElementById('invalidCard');
-const validCardReport = document.getElementById('validCardMessage');
-const affiliateButton = document.getElementById('affiliatebutton');
+// console.log(validator);
+
+const formValidator = document.getElementById("form"); 
+const userCreditCard = document.getElementById("numberTdc"); 
+const invalidCreditCard = document.getElementById("invalidCard");
+const validCreditCard = document.getElementById("validCard");
+const validCardReport = document.getElementById("validCardMessage");
+const affiliateButton = document.getElementById("affiliateButton");
 const signUpButton = document.getElementById("signUpButton");
+const returnButton = document.getElementById("returnButton");
+const notFoundView = document.getElementById("notFoundView");
+const firstView = document.getElementById("firstView");
 const homeBack = document.getElementById("homeBack");
 
-
-affiliateButton.addEventListener('click', secondView);
+formValidator.addEventListener("submit", getNumber);
+affiliateButton.addEventListener("click", secondView);
 signUpButton.addEventListener("click", notFound);
-formValidator.addEventListener('submit', getNumber);
+returnButton.addEventListener("click", returnHome);
 homeBack.addEventListener("click", returnHome);
 validCreditCard.style.display = "none";
+notFoundView.style.display = "none";
 formValidator.style.display = "none";
-notFoundPage.style.display = "none";
 
-function secondView(){
-  document.getElementById('form').style.display = "block";
-  document.getElementById('firstView').style.display = "none";
-  // document.getElementById('validCard').style.display = "none";
-  // document.getElementById("notFoundView").style.display = "none";
-  let userName = document.getElementById("userName");
-  userName.value = "";
+
+function secondView() {
+  formValidator.style.display = "block";
+  firstView.style.display = "none";
+  let userMail = document.getElementById("userMail");
+  userMail.value = "";
   let numberTdc = document.getElementById("numberTdc");
   numberTdc.value = "";
 }
 
-function notFound(){
-  document.getElementById("notFoundView").style.display = "flex";
-  document.getElementById('firstView').style.display = "none";
-  // document.getElementById('validCard').style.display = "none";
-  // document.getElementById('form').style.display = 'none';
+function notFound() {
+  notFoundView.style.display = "flex";
+  firstView.style.display = "none";
 }
 
 function returnHome() {
-  location.reload();
-  // document.getElementById('firstView').style.display = "flex";
-  // document.getElementById("notFoundView").style.display = "none";
-  // document.getElementById('form').style.display = 'none';
-  // document.getElementById('validCard').style.display = "none";
+  firstView.style.display = "flex";
+  notFoundView.style.display = "none";
+  formValidator.style.display = "none";
+  validCreditCard.style.display = "none";
+  invalidCreditCard.innerHTML = "";
 }
 
-function approvedTransaction(){
-    const tdcNumber = userCreditCard.value;
-    const maskify = validator.maskify(tdcNumber);
-    document.getElementById('validCard').style.display = "block";
-    document.getElementById('form').style.display = "none";
-    // document.getElementById("notFoundView").style.display = "none";
-    // document.getElementById('firstView').style.display = "none";
-    validCardReport.innerHTML = `La transaccion con la tarjeta ${maskify} ha sido exitosa`
- }
+function approvedTransaction() {
+  const tdcNumber = userCreditCard.value;
+  const maskify = validator.maskify(tdcNumber);
+  document.getElementById("validCard").style.display = "block";
+  document.getElementById("form").style.display = "none";
+  validCardReport.innerHTML = `La transacción con la tarjeta ${maskify} ha sido exitosa`;
+  invalidCreditCard.innerHTML = "";
+}
 
-function getNumber(event){
-    event.preventDefault();
-    const tdcNumber = userCreditCard.value;
-    if (validator.isValid(tdcNumber) === true){
-       approvedTransaction();
-    }else {
-        invalidCreditCard.innerHTML = 'Tarjeta no valida';
-    }
+function getNumber(event) {
+  event.preventDefault();
+  const tdcNumber = userCreditCard.value;
+  if (validator.isValid(tdcNumber) === true) {
+    approvedTransaction();
+  } else {
+    invalidCreditCard.innerHTML = "Tarjeta no valida";
+  }
+  validator.maskify(tdcNumber);
 }
 
 userCreditCard.addEventListener("input", onlyNumber);
@@ -72,7 +72,4 @@ function onlyNumber() {
   let numberTdc = document.getElementById("numberTdc");
   const regEx = new RegExp(/\D/g);
   numberTdc.value = numberTdc.value.replace(regEx,'');
-  // if (!regEx.test(numberTdc.value)) { 
-  //   numberTdc.value = numberTdc.value.substring(0, numberTdc.value.length - 1);
-  // }
 }
