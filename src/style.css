@@ -241,66 +241,35 @@ footer {
 }
 
 
-/* @media screen and (max-width: 1200px){
-    body{
-        background-color: red;
-    }
-} */
+@media screen and (max-width: 1200px){
+  .lower-bar a{
+    margin: 0 0 0 30px;
+  }
+}
+
 
 @media screen and (max-width: 768px){
-  .option-container{
-    display: flex;
-    flex-direction: column;
-  }
-  .user-selection-container img{
-    width: 35%;
-  }
-  .buttonSelect{
-    font-size: 15px;
-    width: 50%;
-    margin-bottom: 20px;
-  }
-  .information-box h1{
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: center;
-  }
-  .validator-form-container {
-    width: 70%;
-  }
-  .input{
-    width: 100%;
-  }
-  footer{
-    height: 120px;
-  }
-  .homeButton{
-    margin-top: -45px;
-  }
-  .lower-bar{
-    display: block;
-    text-align: center;
-    padding-top: 15px;
-  }
-} 
+footer{
+  height: 150px;
+}
+.lower-bar{
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+}
+.lower-bar a{
+  margin: 0;
+}
+}
 
-@media screen and (max-width: 480px){
-  .information-box h1{
-    padding: 0 10px;
-    font-size: 15px;
-    text-align: center;
-  }
+@media screen and (max-width: 400px){
   footer{
-    height: 150px;
+    height: 100px;
   }
   .lower-bar{
-    display: block;
-    text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
   }
-  .lower-bar a{
-    display: block;
-    margin: 0;
-    padding: 5px;
+  .social-icons-container{
+    padding-bottom: 10px;
   }
 }
