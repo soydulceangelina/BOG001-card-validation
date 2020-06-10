@@ -42,7 +42,7 @@ header:hover{
 }
 
 main {
-  position: fixed;
+  position: fixed; 
   width: 100%;
 }
 
@@ -242,6 +242,12 @@ footer {
 
 
 @media screen and (max-width: 1200px){
+  .homeButton{
+    height: 700px;
+  }
+  .not-found-page{
+    width: 600px;
+  }
   .lower-bar a{
     margin: 0 0 0 30px;
   }
@@ -249,20 +255,62 @@ footer {
 
 
 @media screen and (max-width: 768px){
-footer{
-  height: 150px;
-}
-.lower-bar{
-  display: block;
-  text-align: center;
-  padding-top: 25px;
-}
-.lower-bar a{
-  margin: 0;
-}
+  .homeButton{
+    height: 500px;
+  }
+  .not-found-page{
+    width: 430px;
+  }
+  .not-found-page h1{
+    margin: 10px 0 5px 0;
+  }
+  .form-container{
+    height: 500px;
+  }
+  .form-container h1{
+    margin-top: 10px;
+  }
+  .validator-form-container{
+    width: 70%;
+  }
+  .input{
+    width: 100%;
+  }
+  footer{
+    height: 150px;
+  }
+  .lower-bar{
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .lower-bar a{
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 400px){
+  .homeButton{
+    height: 425px;
+  }
+  .homeButton input{
+    width: 150px;
+    height: 40px;
+  }
+  .form-container{
+    height: 450px;
+  }
+  .validator-form-container h3{
+    margin: 15px 0;
+  }
+  .input{
+    height: 35px;
+  }
+  .button{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+  }
   footer{
     height: 100px;
   }
