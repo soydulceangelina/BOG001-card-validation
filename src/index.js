@@ -51,7 +51,7 @@ function approvedTransaction() {
   const maskify = validator.maskify(tdcNumber);
   document.getElementById("validCard").style.display = "block";
   document.getElementById("form").style.display = "none";
-  validCardReport.innerHTML = `La transacción con la tarjeta ${maskify} ha sido exitosa`;
+  validCardReport.innerHTML = `La transacción con la tarjeta </br> ${maskify} </br> ha sido exitosa`;
   invalidCreditCard.innerHTML = "";
 }
 
