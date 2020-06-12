@@ -66,17 +66,17 @@ Con el feedback recibido mejoramos la distribución de los componentes y creamos
 En nuevas iteraciones decidimos mejorar el flujo, el contraste y optimizar con la psicología de las formas para que nuestro producto refleje la seguridad que brindamos.
  
 <figure>
-<img width="500px" src="./docs/img/vista1.jpg">
+<img width="500px" src="./docs/img/vista1.png">
 <figcaption>Prototipo</figcaption>
 </figure>
 
 <figure>
-<img width="500px" src="./docs/img/vista2.jpg">
+<img width="500px" src="./docs/img/vista2.png">
 <figcaption>Prototipo</figcaption>
 </figure>
 
 <figure>
-<img width="500px" src="./docs/img/vista4.jpg">
+<img width="500px" src="./docs/img/vista4.png">
 <figcaption>Prototipo</figcaption>
 </figure>
 
