@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  background-color: rgb(238, 238, 238);
+  background-color: rgba(245, 245, 245, 0.767);
 }
 
 h1 {
@@ -90,6 +90,18 @@ main {
   box-shadow: 0 0 5px 0 var(--form-color);
   background-color: var(--background-color);
   cursor: pointer;
+}
+
+.information-box{
+  border: 1px solid var(--form-color);
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.information-box h1{
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 
 .form-container {
@@ -244,13 +256,11 @@ footer {
   }
 
   .information-box {
-    height: 20px;
+    margin-top: 10px;
   }
 
   .information-box h1 {
-    padding: 0 20px;
-    text-align: center;
-    font-size: var(--font-size2);
+    font-size: var(--font-size3);
   }
 
   .homeButton {
@@ -273,26 +283,45 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+  min-height: calc(100vh - 300px);
+  }
+  header{
+    margin-bottom: 50px;
+  }
   .first-page {
-    height: 420px;
+    height: 600px;
   }
 
   .option-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
     width: 100%;
     margin-bottom: 20px;
   }
 
+  .user-selection-container{
+    margin-bottom: 20px;
+  }
+
   .user-selection-container img {
-    width: 40%;
+    width: 50%;
   }
 
   .information-box {
-    height: 20px;
+    margin-top: 10px;
   }
 
+  .information-box h1 {
+    font-size: var(--font-size1);
+  }
   .buttonSelect {
     width: 90%;
     font-size: var(--font-size2);
+  }
+  .homeButton{
+    height: 400px;
   }
   .homeButton input {
     width: 50%;
@@ -301,7 +330,7 @@ footer {
     width: 100%;
   }
   .not-found-page img{
-    width: 50%;
+    width: 30%;
   }
   .not-found-page h1 {
     margin: 10px 0 5px 0;
@@ -319,6 +348,18 @@ footer {
   .input {
     width: 100%;
   }
+  .valid-container{
+    height: 400px;
+  }
+  .valid-img-container{
+    width: 100%;
+  }
+  .valid-img-container img{
+    width: 30%;
+  }
+  footer{
+    margin-top: 50px;
+  }
   .lower-bar {
     display: block;
     text-align: center;
@@ -333,6 +374,12 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+  main {
+  min-height: calc(100vh - 220px);
+  }
+  header{
+    margin-bottom: 20px;
+  }
   .first-page {
     height: 650px;
   }
@@ -351,9 +398,9 @@ footer {
     margin-bottom: 20px;
   }
 
-  .information-box {
+  /* .information-box {
     height: 100%;
-  }
+  } */
 
   .buttonSelect {
     width: 70%;
@@ -376,7 +423,9 @@ footer {
     width: 150px;
     font-size: 20px;
   }
-  
+  .valid-img-container img{
+    width: 50%;
+  }
   .lower-bar {
     padding: 0;
     height: 100%;
